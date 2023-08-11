@@ -12,9 +12,9 @@ function go {
         echo "Error: Label not found."
         return 1
     fi
-    echo "Changing dir to $dir"
+    # echo "Changing dir to $dir"
     cd "$dir" || { echo "Error: Failed to change directory"; return 1; }
-    echo "Change dir OK"
+    # echo "Change dir OK"
 }
 
 
