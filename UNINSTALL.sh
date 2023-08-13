@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#TODO: add interactive possibility to choose what to do with 
+
+
 SCRIPT_NAME="quick_jumper.sh"
 TARGET_DIR="/usr/local/bin"
 

@@ -48,3 +48,6 @@ function list_dirs {
     local output=$(echo "${dirs}" | awk '{printf("%-30s", $1); printf("%-30s", $2); printf("%-30s", $3); printf("%-30s\n", $4);}' | sort)
     echo "${output}"
 }
+
+
+alias list_labels=list_dirs

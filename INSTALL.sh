@@ -3,7 +3,7 @@
 
 CURRENT_DIR=$(dirname "$0")
 SCRIPTS_PATH="${CURRENT_DIR}/scripts"
-SCRIPT_NAME="quick_jumper.sh"
+SCRIPT_NAME="cd++.sh"
 QUICK_JUMP_SCRIPT_PATH="${SCRIPTS_PATH}/${SCRIPT_NAME}"
 TARGET_DIR="/usr/local/bin"
 
