@@ -125,3 +125,8 @@ After installation, you can test the functionality:
     ```
 
     This should list the contents of the directory you just saved under the label "test".
+
+
+### License
+
+This project is licensed under the MIT License.
