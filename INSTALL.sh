@@ -1,6 +1,3 @@
-Certainly! Below is the updated installation script which prompts the user if they want to install the extension (`command_extensions.sh`) in addition to the main script (`cd++.sh`):
-
-```bash
 #!/bin/bash
 
 CURRENT_DIR=$(dirname "$0")
@@ -58,6 +55,3 @@ else
 fi
 
 echo "Installation complete!"
-```
-
-In this script, I've added a `read` command to prompt the user for input. If the user inputs "yes", it will install the `command_extensions.sh` script the same way as the `cd++.sh` script. If the user presses "enter" or provides any input other than "yes", the extensions won't be installed.
