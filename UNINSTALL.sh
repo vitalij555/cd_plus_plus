@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#TODO: add interactive possibility to choose what to do with 
-
-
 SCRIPT_NAME="cd++.sh"
 TARGET_DIR="/usr/local/bin"
 
