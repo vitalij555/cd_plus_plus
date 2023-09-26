@@ -7,6 +7,13 @@ function go {
         return 1
     fi
 
+    #echo "Checking if $HOME/.dirs exist..."
+    if [ ! -f "$HOME/.dirs" ]
+    then
+        echo "Does not exist  - creating"
+        touch "$HOME/.dirs"
+    fi
+
     local dir=$(grep "^$1 " ~/.dirs | cut -d' ' -f2-)
     if [ -z "$dir" ]; then
         echo "Error: Label not found."
@@ -32,7 +39,7 @@ function mark {
         echo "$1 $current_path" >> ~/.dirs
     else
         local dir=$(echo "$label_exists" | cut -d' ' -f2-)
-        if [ "$dir" == "$current_path" ]; then
+        if [[ "$dir" == "$current_path" ]]; then
             echo "Link named $1 already registered for this path"
             return 1
         else
