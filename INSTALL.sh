@@ -8,6 +8,15 @@ MAIN_SCRIPT_PATH="${SCRIPTS_PATH}/${MAIN_SCRIPT_NAME}"
 EXTENSION_SCRIPT_PATH="${SCRIPTS_PATH}/${EXTENSION_SCRIPT_NAME}"
 TARGET_DIR="/usr/local/bin"
 
+
+
+if [[ $(id -u) -ne 0 ]]; then
+    echo "Error: This script must be run as root"
+    exit 1
+fi
+
+
+
 # Function to append to the appropriate shell configuration file
 function append_to_shell_config {
     local script_path="$1"
