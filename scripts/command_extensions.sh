@@ -61,133 +61,105 @@ function process_args {
 }
 
 
-# function cd {
-#     local path="$(resolve_path_or_label "$1")"
-#     command cd "$path"
-# }
-
-function cp {
-    #printf "\ncp called" 1>&2 
+function cppp {
     local args=()
     process_args args "$@"
-    command cp "${args[@]}"
+    cp "${args[@]}"
 }
 
-function mv {
-    #printf "\nmv called" 1>&2
+function mvpp {
     local args=()
     process_args args "$@"
-    command mv "${args[@]}"
+    mv "${args[@]}"
 }
 
-function mkdir {
-    #printf "\nmkdir called" 1>&2
+function mkdirpp {
     local args=()
     process_args args "$@"
-    command mkdir "${args[@]}"
+    mkdir "${args[@]}"
 }
 
-function rmdir {
-    #printf "\nrmdir called" 1>&2
+function rmdirpp {
     local args=()
     process_args args "$@"
-    command rmdir "${args[@]}"
+    rmdir "${args[@]}"
 }
 
-function rm {
-    #printf "\nrm called" 1>&2
+function rmpp {
     local args=()
     process_args args "$@"
-    command rm "${args[@]}"
+    rm "${args[@]}"
 }
 
-function ln {
-    #printf "\nln called" 1>&2
+function lnpp {
     local args=()
     process_args args "$@"
-    command ln "${args[@]}"
+    ln "${args[@]}"
 }
 
-function chmod {
-    #printf "\nchmod called" 1>&2
+function chmodpp {
     local args=()
     process_args args "$@"
-    command chmod "${args[@]}"
+    chmod "${args[@]}"
 }
 
-function chown {
-    #printf "\nchown called" 1>&2
+function chownpp {
     local args=()
     process_args args "$@"
-    command chown "${args[@]}"
+    chown "${args[@]}"
 }
 
-function ls {
-    #printf "\nls called" 1>&2
+function lspp {
     local args=()
     process_args args "$@"
-    command ls "${args[@]}"
+    ls "${args[@]}"
 }
 
-function touch {
-    #printf "\ntouch called" 1>&2
+function touchpp {
     local args=()
     process_args args "$@"
-    command touch "${args[@]}"
+    touch "${args[@]}"
 }
 
-function cat {
-    #printf "\ncat called" 1>&2
+function catpp {
     local args=()
     process_args args "$@"
-    command cat "${args[@]}"
+    cat "${args[@]}"
 }
 
-function grep {
-    #printf "\ngrep called" 1>&2
+function greppp {
     local args=()
     process_args args "$@"
-    command grep "${args[@]}"
+    grep "${args[@]}"
 }
 
-function find {
-    #printf "\nfind called" 1>&2
+function findpp {
     local args=()
     process_args args "$@"
-    command find "${args[@]}"
+    find "${args[@]}"
 }
 
-# function echo {
-#     local args=()
-#     process_args args "$@"
-#     command echo "${args[@]}"
-# }
-
-function diff {
-    #printf "\ndiff called" 1>&2
+function diffpp {
     local args=()
     process_args args "$@"
-    command diff "${args[@]}"
+    diff "${args[@]}"
 }
 
-function tail {
-    #printf "\ntail called" 1>&2
+function tailpp {
     local args=()
     process_args args "$@"
-    command tail "${args[@]}"
+    tail "${args[@]}"
 }
 
-function head {
-    #printf "\nhead called" 1>&2
+function headpp {
     local args=()
     process_args args "$@"
-    command head "${args[@]}"
+    head "${args[@]}"
 }
 
-function less {
-    #printf "\nless called" 1>&2
+function lesspp {
     local args=()
     process_args args "$@"
-    command less "${args[@]}"
+    less "${args[@]}"
 }
 
